@@ -746,7 +746,7 @@ def follow_instructions(list, index)
       acc(list, index)
     end
     @completed = true
-  elsif @steps_taken[index] == 1 || index > 628
+  elsif @steps_taken[index] == 1 || index > (list.length - 1)
     return nil
   else
     @steps_taken[index] = 1
